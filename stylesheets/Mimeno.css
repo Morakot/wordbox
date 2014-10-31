@@ -5,6 +5,131 @@
 	margin: 0;
 	padding: 0;
 }
+li {
+	list-style: none;
+}
 body {
-	background: url(../images/body-bg.jpg);
+	background: url(../images/bg.png);
+}
+footer {
+	background: #33414E;
+	color: #999B9A;
+	text-align: center;
+	vertical-align: middle;
+	padding: 30px;
+}
+#gallery {
+	height: 400px;
+	overflow: hidden;
+	background: url(file:///F|/Documents/SvnRepositories/WordBox/trunk/images/sliderbg-1.jpg);
+	background-size: cover;
+}
+#gallery img.minimg {
+	width: 300px;
+	height: 100px;
+	margin: 15px 0 0 50px;
+	border: solid 5px gray;
+}
+header {
+	background: #333;
+	padding: 10px 10%;
+}
+#menu {
+	/*background: #50C9C4;*/
+	overflow: hidden;
+	padding: 10px;
+}
+#menu ul {
+	float: right;
+}
+#menu li {
+	float: left;
+	padding: 0 5px;
+}
+#menu a {
+	line-height: 48px;
+	padding: 5px 30px;
+	color: #A8A8A8;
+	text-decoration: none;
+	border: solid transparent 2px;
+}
+#menu a:hover {
+	border: solid #65BE3E 2px;
+	border-radius: 48px;
+	color: #65BE3E;
+	background: rgba(222,222,222,0.2);
+}
+#picswitcher {
+	height: 100px;
+	background: #F3F3F3;
+	border-bottom: solid #999999 2px;
+}
+#picswitcher li {
+	width: 24%;
+	overflow: hidden;
+	float: left;
+	height: 80px;
+	margin: 10px 0;
+}
+#picswitcher li+li {
+	border-left: solid #909 1px;
+}
+#cover {
+	background: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+#cover .alert {
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -200px;
+	margin-left: -250px;
+	box-shadow: 0 0 8px 4px #222;
+}
+#cover header {
+	line-height: 40px;
+	padding: 5px;
+	text-align: center;
+	background: #F5F5F5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: solid #ddd 1px;
+	color: #3A3232;
+}
+#cover .alert article {
+	padding: 20px;
+	text-align: center;
+	width: 400px;
+	height: 150px;
+	background: #fff;
+	border-left: solid #ddd 1px;
+	border-right: solid #ddd 1px;
+	overflow-y: scroll;
+}
+#cover footer {
+	padding: 5px;
+	background: white;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: #ddd 1px;
+	border-style: none solid solid solid;
+}
+#cover footer button {
+	border: solid 1px #ccc;
+	padding: 6px 12px;
+	background: #fff;
+	width: 100px;
+	line-height: 24px;
+	border-radius: 4px;
+}
+#cover footer button:hover {
+	cursor: pointer;
+	background: #e6e6e6;
+	box-shadow: 4px 4px 5px #777 inset, -4px -4px -5px #ccc inset;
 }
